@@ -31,13 +31,22 @@ li {
   float: right;
 }
 
-.bg-cover {
-  background-attachment: static;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .card {
   float: left;
+}
+
+.highlight-word {
+  position: relative;
+  z-index: 0;
+  white-space: nowrap;
+}
+.highlight-word:before {
+  content: "";
+  background-size: 100% auto;
+  width: 108%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-3%, 0);
 }
