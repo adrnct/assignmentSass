@@ -1,0 +1,43 @@
+$bgColor: #333;
+$hover: #111;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $bgColor;
+}
+
+li {
+  float: left;
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  a:hover:not(.active) {
+    background-color: $hover;
+  }
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+.right {
+  float: right;
+}
+
+.bg-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  float: left;
+}
